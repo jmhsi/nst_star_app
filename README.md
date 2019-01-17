@@ -1,5 +1,7 @@
 ### Setting up a NST app, with style loss using L2 Wasserstein Distance
 
+Try it on google cloud platform: http://35.192.6.67
+
 ## To download model weights
 ```
 cd deployment
@@ -27,6 +29,7 @@ Go to localhost:8008. you can change --publish \<choose port>:8008 and could go 
 
 ## Papers and resources
 https://arxiv.org/pdf/1808.03344.pdf (NST literature overview)
+https://arxiv.org/pdf/1705.04058.pdf (Another ST overview)
 https://arxiv.org/pdf/1807.05927.pdf (Charbonnier Loss)
 https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf (gatys paper 1?)
 https://arxiv.org/pdf/1611.07865.pdf (Gatys paper 2)
