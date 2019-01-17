@@ -2,6 +2,7 @@
 
 ## To download model weights
 ```
+cd deployment
 sh download_models.sh
 ```
 
