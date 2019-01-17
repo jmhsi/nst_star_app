@@ -11,13 +11,11 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY deployment deployment/
-COPY download_models.sh .
+WORKDIR "/deployment"
 
 RUN chmod +x download_models.sh
 
-WORKDIR "/deployment"
-
-RUN sh ../download_models.sh 
+RUN sh download_models.sh 
 
 EXPOSE 8008
 
