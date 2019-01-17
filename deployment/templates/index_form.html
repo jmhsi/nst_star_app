@@ -1,0 +1,77 @@
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <link rel='stylesheet' href='/statics/css/style.css'>
+        <link rel="shortcut icon" href="/statics/images/favicon.ico" type="image/x-icon">
+        <script src='/statics/js/client.js'></script>
+    </head>
+    <body>
+        <div>
+            <div class='center'>
+                <div class='title'>Neural Style Transfer via optimization with L2 Wasserstein Distance</div>
+                <h5>Safari may have some timeout issues. Try Chrome or Firefox</h5>
+
+                    <!-- CONTENT -->
+                    <div class='no-display'>
+                        <input id='content-input'
+                            class='no-display'
+                            type='file'
+                            name='content'
+                            accept='image/*'
+                            onchange='showPickedContent(this)'>
+                    </div>
+                    <button class='choose-file-button' type='button' onclick='showPickerContent()'>Select Content Image</button>
+                    <div class='upload-label'>
+                        <label id='content-upload-label'>No file chosen</label>
+                    </div>
+                    <div class='content-img'>
+                        <img id='content-image-picked' class='no-display' alt='Content Image' height='200'>
+                    </div>
+                    
+                    <!-- STYLE -->
+                    <div class='no-display'>
+                        <input id='style-input'
+                        class='no-display'
+                        type='file'
+                        name='style'
+                        accept='image/*'
+                        onchange='showPickedStyle(this)'>
+                    </div>
+                    <button class='choose-file-button' type='button' onclick='showPickerStyle()'>Select Style Image</button>
+                    <div class='upload-label'>
+                        <label id='style-upload-label'>No file chosen</label>
+                    </div>
+                    <div>
+                         <img id='style-image-picked' class='no-display' alt='Style Image' height='200'>
+                    </div>
+
+                    <!-- STYLED IMAGE AND ANALYZE -->
+                    <!--
+                    <h3>Choose number of optimization steps: (150 max)</h3>
+                    <input type="number" id = 'steps' value="20">
+                    -->
+                    
+                    <div class='no-display'>
+                        <input id='stylized-input'
+                        class='no-display'
+                        type='file'
+                        name='stylized'
+                        accept='image/*'
+                        onchange='showStylized(this)'>
+                    </div>
+                    
+                    <div class='analyze'>
+                        <button id='stylize-button' class='analyze-button' type='button' onclick='stylize()'> 
+                        Run Style Transfer</button>
+                    </div>
+                    <div class='title' id='step-count-display'>
+                    </div>
+                    <div>
+                        <img id='stylized-image' class='no-display' alt='Stylized Image' height='200'>
+                    </div>
+
+
+            </div>
+        </div>
+    </body>
+</html>

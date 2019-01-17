@@ -1,0 +1,13 @@
+-f https://download.pytorch.org/whl/nightly/cpu/torch_nightly.html
+torch_nightly
+torchvision
+livelossplot
+matplotlib
+pillow
+requests
+numpy==1.16.0rc1
+starlette
+uvicorn
+python-multipart
+aiofiles
+aiohttp
