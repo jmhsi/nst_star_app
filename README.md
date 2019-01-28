@@ -1,7 +1,5 @@
 ### Setting up a NST app, with style loss using L2 Wasserstein Distance (pytorch)
 
-Try it on google cloud platform: http://35.192.6.67
-
 ## To download model weights
 ```
 cd deployment
